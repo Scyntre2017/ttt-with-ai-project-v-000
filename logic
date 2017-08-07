@@ -1,0 +1,15 @@
+game selects players
+  0 players => Computer vs Computer
+  1 player => Computer vs Human
+  2 players => Human vs Human
+end
+
+Computer game play logic
+  first or second move computer goes in middle if available
+  first or second move computer goes in corner if available
+  third move computer goes in corner except for opposite corner of other player
+  fourth move to the end
+    computer checks to see if win is possible and moves there
+    computer checks to see if other player is about to win and blocks
+  end
+end

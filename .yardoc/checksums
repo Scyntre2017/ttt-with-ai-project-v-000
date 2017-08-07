@@ -1,0 +1,5 @@
+lib/game.rb 53c5e5caff258861befb623a4db8e91d9bef6e12
+lib/board.rb 540bfc34c16bd7a2498ce3bc86bdc5e03baae4fd
+lib/player.rb 02a96d7f0a36c8c39b0cd0b725e5eee4bfca5fbe
+lib/players/human.rb 23bca6f6599d70eefc62ca30774e1fe6520106d3
+lib/players/computer.rb 6592470e1e14033df0c97be2d1ec68e06ba726cd
