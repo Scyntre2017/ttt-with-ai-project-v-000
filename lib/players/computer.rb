@@ -2,7 +2,7 @@ require "pry"
 
 module Players
   class Computer < Player
-    attr_accessor :second_move
+    attr_accessor :name
 
     WIN_COMBINATIONS = [
       [0, 1, 2],
@@ -17,6 +17,11 @@ module Players
 
     SECOND_MOVE = ["1", "3", "7", "9"]
 
+    def initialize
+      super
+      @name = "Computer"
+    end
+
     def move(board)
       if board.turn_count == 0
         "5"
@@ -27,6 +32,6 @@ module Players
       (1..9).to_a.sample.to_s
       end
     end
-    
+
   end
 end

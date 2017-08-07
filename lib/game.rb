@@ -54,6 +54,7 @@ class Game
     if !board.valid_move?(current_move)
       turn
     else
+      puts "#{player.name} chooses space #{current_move}."
       board.update(current_move, player)
       board.display
     end
