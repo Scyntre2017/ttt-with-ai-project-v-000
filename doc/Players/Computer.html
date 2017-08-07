@@ -102,12 +102,68 @@
 </div>
 
 
+  <h2>Constant Summary</h2>
+  <dl class="constants">
+    
+      <dt id="WIN_COMBINATIONS-constant" class="">WIN_COMBINATIONS =
+        
+      </dt>
+      <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>1</span><span class='comma'>,</span> <span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> <span class='int'>4</span><span class='comma'>,</span> <span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> <span class='int'>7</span><span class='comma'>,</span> <span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>3</span><span class='comma'>,</span> <span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> <span class='int'>4</span><span class='comma'>,</span> <span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> <span class='int'>5</span><span class='comma'>,</span> <span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> <span class='int'>4</span><span class='comma'>,</span> <span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>4</span><span class='comma'>,</span> <span class='int'>8</span><span class='rbracket'>]</span>
+<span class='rbracket'>]</span></pre></dd>
+    
+      <dt id="SECOND_MOVE-constant" class="">SECOND_MOVE =
+        
+      </dt>
+      <dd><pre class="code"><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>3</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>7</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>9</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span></pre></dd>
+    
+  </dl>
 
 
 
 
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#second_move-instance_method" title="#second_move (instance method)">#<strong>second_move</strong>  &#x21d2; Object </a>
+    
 
-  <h2>Instance Attribute Summary</h2>
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute second_move.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+  
   
   <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="../Player.html" title="Player (class)">Player</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="../Player.html#token-instance_method" title="Player#token (method)">#token</a></span></p>
@@ -164,6 +220,54 @@
   
 </div>
 
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="second_move=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="second_move-instance_method">
+  
+    #<strong>second_move</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute second_move</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+5
+6
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/players/computer.rb', line 5</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_second_move'>second_move</span>
+  <span class='ivar'>@second_move</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
@@ -184,15 +288,29 @@
       <pre class="lines">
 
 
-4
-5
-6</pre>
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/players/computer.rb', line 4</span>
+      <pre class="code"><span class="info file"># File 'lib/players/computer.rb', line 20</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move'>move</span><span class='lparen'>(</span><span class='id identifier rubyid_board'>board</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_board'>board</span><span class='period'>.</span><span class='id identifier rubyid_turn_count'>turn_count</span> <span class='op'>==</span> <span class='int'>0</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>5</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_board'>board</span><span class='period'>.</span><span class='id identifier rubyid_turn_count'>turn_count</span> <span class='op'>==</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_binding'>binding</span><span class='period'>.</span><span class='id identifier rubyid_pry'>pry</span>
+    <span class='const'><span class='object_link'><a href="#SECOND_MOVE-constant" title="Players::Computer::SECOND_MOVE (constant)">SECOND_MOVE</a></span></span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span>
+  <span class='kw'>else</span>
   <span class='lparen'>(</span><span class='int'>1</span><span class='op'>..</span><span class='int'>9</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -204,7 +322,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Aug  7 08:05:40 2017 by
+  Generated on Mon Aug  7 13:33:25 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.1).
 </div>
