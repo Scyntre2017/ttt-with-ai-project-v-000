@@ -1,8 +1,10 @@
 class Board
-    attr_accessor :cells
+    attr_accessor :cells, :x_positions, :o_positions
 
   def initialize
     @cells = Array.new(9, " ")
+    @x_positions = []
+    @o_positions = []
   end
 
   def reset!
@@ -38,6 +40,12 @@ class Board
   end
 
   def update(input, player)
+    case player.token
+      when "X"
+      x_positions << input.to_i
+      when "O"
+      o_positions << input.to_i
+    end
     cells[input.to_i - 1] = player.token
   end
 end

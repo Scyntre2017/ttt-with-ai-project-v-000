@@ -2,9 +2,9 @@ module Players
   class Human < Player
     attr_reader :name
 
-    def initialize
+    def initialize(token)
       super
-      @name = name
+      @name = "Human"
     end
 
     def move(board)

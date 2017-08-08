@@ -1,5 +1,3 @@
-require "pry"
-
 class Game
   attr_accessor :board, :player_1, :player_2
 
@@ -66,8 +64,10 @@ class Game
     end
     if won?
       puts "Congratulations #{winner}!"
+      winner
     elsif draw?
       puts "Cat's Game!"
+      "Cat's Game!"
     end
   end
 end

@@ -6,9 +6,19 @@ puts "Welcome to Tic Tac Toe!"
 
 def game_play
 
-	puts "Please enter 0, 1, or 2 players"
+  wargames = []
 
-	players = gets.strip.to_i
+	puts "Please enter 0, 1, or 2 players. Or enter 100 for wargames (AI vs AI)"
+
+  players = gets.strip.to_i
+  if players == 100
+    100.times do
+      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+      game.play
+      wargames << game.play
+    end
+    puts "#{wargames.uniq}"
+  end
 	case players
 	when 0
 	  game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
@@ -21,7 +31,7 @@ def game_play
 	    game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
 		end
 	when 2
-		game = game.new(Players::Human.new("X"), Players::Human.new("O"))
+		game = Game.new(Players::Human.new("X"), Players::Human.new("O"))
 	end
 
 	game.play
